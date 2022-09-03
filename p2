@@ -1,0 +1,59 @@
+# Quiz Game : MINI PROJECT
+print("Hello Everyone ! ,")
+print("Welcome, for quiz! ")
+n = input("Do you want to play ? ")
+
+if n.upper() != 'YES':
+    quit()
+
+print("Okay! Let's started :) ")
+print("Note :- User must be write answer in lowercase .")
+score = 0
+scored =0
+
+answer = input("What does CPU stand for? ")
+if answer.lower() == "central processing unit" :
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+    scored += 1
+
+answer = input("What does GPU stand for? ")
+if answer.lower() == "graphic processing unit" :
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+    scored += 1
+
+answer = input("Who is the CEO of Google Company ?")
+if answer.lower() == "sundar pichai" :
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+    scored += 1
+
+answer = input("Who is the CEO of Microsoft company?")
+if answer.lower() == "satya nadella" :
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+    scored += 1
+
+answer = input("What does RAM stand for? ")
+if answer.lower() == "random access memory" :
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+    scored += 1
+
+print(" YOu got " + str(score) + " questions correct! ") 
+print(" YOu got " + str(scored) + " questions Incorrect! ") 
+print("You got " + str((score/5)*100) +" %." )
+
+
+
